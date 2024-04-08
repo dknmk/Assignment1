@@ -25,20 +25,20 @@ Do Kyung Kim.
 
 
 # Importing libraries
-import numpy as np
-import torch
-from torch import nn
-print(torch.cuda.is_available())
+        import numpy as np
+        import torch
+        from torch import nn
+        print(torch.cuda.is_available())
 
 # Checking the device
-device=(
-    'cuda'
-    if torch.cuda.is_available()
-    else 'mps'
-    if torch.backends.mps.is_available()
-    else 'cpu'
-)
-print(f'Using {device} device')
+        device=(
+            'cuda'
+            if torch.cuda.is_available()
+            else 'mps'
+            if torch.backends.mps.is_available()
+            else 'cpu'
+        )
+        print(f'Using {device} device')
 
 ## **[Task1] building neural network**
 
